@@ -4,7 +4,7 @@ import cheerio  from 'cheerio';
 import puppeteer from 'puppeteer';
 import * as https from 'https'
 
-var rawdata = fs.readFileSync('file.json');
+var rawdata = fs.readFileSync('newfile.json');
 let newjson=[{}]
 let student = JSON.parse(rawdata);
 student = student.results;
