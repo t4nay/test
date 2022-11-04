@@ -31,8 +31,8 @@ for(var x =0;x<student.length;x++){
   student[x]["doctortype"]=s["results"][0]["taxonomies"][0]["desc"]
       try{
 
-  student[x]["full_name"]=s["results"][0]["basic"][0]["first_name"] +" "+s["results"][0]["basic"][0]["last_name"]
-},catch(err){
+  student[x]["full_name"]=s["results"][0]["basic"][0]["first_name"] +" "+s["results"][0]["basic"][0]["last_name"];
+}catch(err){
   continue;
 }
   student[x]["city"]=s["results"][0]["addresses"][0]["city"]
