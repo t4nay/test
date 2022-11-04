@@ -32,7 +32,7 @@ for(var x =0;x<student.length;x++){
       try{
 
   student[x]["full_name"]=s["results"][0]["basic"][0]["first_name"] +" "+s["results"][0]["basic"][0]["last_name"]
-  }catch(err){
+},catch(err){
   continue;
 }
   student[x]["city"]=s["results"][0]["addresses"][0]["city"]
