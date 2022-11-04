@@ -45,4 +45,5 @@ for(var x =0;x<student.length;x++){
 }catch(err){
   continue;
 }
-})();
+}})();
+
