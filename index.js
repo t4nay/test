@@ -24,14 +24,17 @@ for(var x =0;x<student.length;x++){
     try{
       console.log(s["results"][0]["taxonomies"][0]["state"])
       console.log(x)
-}catch(err){
-  continue;
-}
+
 
   newjson[y]=student[x];
     student[x]["state"]=s["results"][0]["addresses"][0]["state"]
   student[x]["doctortype"]=s["results"][0]["taxonomies"][0]["desc"]
+      try{
+
   student[x]["full_name"]=s["results"][0]["basic"][0]["first_name"] +" "+s["results"][0]["basic"][0]["last_name"]
+  }catch(err){
+  continue;
+}
   student[x]["city"]=s["results"][0]["addresses"][0]["city"]
   let data = JSON.stringify(newjson[y]);
   console.log(student[x])
