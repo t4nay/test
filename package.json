@@ -1,14 +1,15 @@
 {
   "type": "module",
   "scripts": {
-   "start": "node index.js"
- },
+    "start": "node index.js"
+  },
   "dependencies": {
     "@types/follow-redirects": "^1.14.1",
     "cheerio": "^1.0.0-rc.10",
     "fetch": "^1.1.0",
     "follow-redirects": "^1.15.0",
     "https": "^1.0.0",
+    "json-fixer": "^1.6.15",
     "node-fetch-cookies": "^2.0.4",
     "puppeteer": "^13.7.0",
     "ssl-root-cas": "^1.3.1"

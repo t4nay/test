@@ -4,17 +4,17 @@ import cheerio  from 'cheerio';
 import puppeteer from 'puppeteer';
 import * as https from 'https'
 
-var rawdata = fs.readFileSync('newfile.json');
+var rawdata = fs.readFileSync('json-fixer.json');
 let newjson=[{}]
 let student = JSON.parse(rawdata);
-student = student.results;
+student = student;
 console.log(student.length)
 var y=0;
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 (async () => {
-for(var x =0;x<student.length;x++){
+for(var x =30339;x<student.length;x++){
   try{
  var s = await fetch(`https://npiregistry.cms.hhs.gov/api/?version=2.1&number=${student[x].npi}&pretty=on`)
 }catch(err){
