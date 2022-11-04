@@ -42,5 +42,7 @@ for(var x =0;x<student.length;x++){
     console.log(s["results"][0]["taxonomies"][0]["desc"])
 
 
+}catch(err){
+  continue;
 }
 })();
